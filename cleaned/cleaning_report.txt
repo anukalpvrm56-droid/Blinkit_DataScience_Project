@@ -1,0 +1,25 @@
+Processing blinkit_customers.csv ...
+[customers] 223 rows had 'pincode' outside [100000, 999999] — dropped.
+
+Processing blinkit_products.csv ...
+
+Processing blinkit_orders.csv ...
+[orders] Removed 462 rows with customer_id not found in customers table.
+
+Processing blinkit_order_items.csv ...
+[order_items] Removed 462 rows with order_id/product_id not found in parent tables.
+
+Processing blinkit_customer_feedback.csv ...
+[feedback] Removed 462 rows with order_id not found in orders table.
+
+Processing blinkit_marketing_performance.csv ...
+
+==================================================
+FINAL ROW COUNTS (after cleaning)
+==================================================
+blinkit_customers_cleaned.csv: 2277 rows
+blinkit_products_cleaned.csv: 268 rows
+blinkit_orders_cleaned.csv: 4538 rows
+blinkit_order_items_cleaned.csv: 4538 rows
+blinkit_customer_feedback_cleaned.csv: 4538 rows
+blinkit_marketing_performance_cleaned.csv: 5400 rows
